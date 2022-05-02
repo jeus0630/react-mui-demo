@@ -1,11 +1,10 @@
-import MuiButton from "./components/MuiButton"
-import MuiTypography from "./components/MuiTypography"
+import MuiTextField from "./components/MuiTextField"
 
 function App() {
 
   return(
     <div className="App">
-      <MuiButton></MuiButton>
+      <MuiTextField></MuiTextField>
     </div>
   )
 }
