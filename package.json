@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 6006",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "json": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
