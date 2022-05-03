@@ -28,14 +28,6 @@ export default function MuiCheckBox(){
         ])
         
     }
-    
-    const changeHandlerTest = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const value = event.target.value;
-        setA(typeof value === 'string' ? value.split(',') : value);
-    }
-
-    console.log(a);
-    
 
     return (
         <Box>
@@ -52,7 +44,7 @@ export default function MuiCheckBox(){
             <Box>
                 <FormControl>
                     <FormLabel>Skills</FormLabel>
-                    <FormGroup onChange={changeHandlerTest}>
+                    <FormGroup>
                         <FormControlLabel label="HTML" control={<Checkbox value="html" checked={skills.includes('html')} onChange={handleSkillChange}/>}/>
                         <FormControlLabel label="CSS" control={<Checkbox value="css" checked={skills.includes('css')} onChange={handleSkillChange}/>}/>
                         <FormControlLabel label="Javascript" control={<Checkbox value="javascript" checked={skills.includes('javascript')} onChange={handleSkillChange}/>}/>
