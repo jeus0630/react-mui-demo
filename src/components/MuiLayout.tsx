@@ -1,8 +1,14 @@
-import { Box } from "@mui/material";
+import { Box, Stack, Divider } from "@mui/material";
 
 export default function MuiLayout(){
     return (        
-        <>
+        <Stack sx={{
+            border: '1px solid'
+        }}
+        direction='row'
+        spacing={2}
+        divider={<Divider orientation="vertical" flexItem/>}
+        >
             <Box sx={{
                 backgroundColor:'primary.main',
                 color:'white',
@@ -24,6 +30,6 @@ export default function MuiLayout(){
             >
 
             </Box>
-        </>
+        </Stack>
     )
 }
